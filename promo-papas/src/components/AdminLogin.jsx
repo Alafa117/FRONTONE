@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 const AdminLogin = () => {
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
@@ -32,3 +35,5 @@ const AdminLogin = () => {
         </div>
     );
 };
+
+export default AdminLogin;

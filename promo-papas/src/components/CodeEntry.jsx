@@ -1,3 +1,7 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './styles/CodeEntry.css';
+
 const CodeEntry = () => {
     const navigate = useNavigate();
     const [code, setCode] = useState('');
@@ -32,3 +36,5 @@ const CodeEntry = () => {
         </div>
     );
 };
+
+export default CodeEntry;

@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 const Login = () => {
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
@@ -36,7 +39,7 @@ const Login = () => {
                     </button>
                 </div>
                 <p>
-                    ¿No tienes cuenta?
+                    ¿No tienes cuenta?{' '}
                     <span onClick={() => navigate('/signup')} className="link">
                         Regístrate
                     </span>
@@ -45,3 +48,5 @@ const Login = () => {
         </div>
     );
 };
+
+export default Login;
